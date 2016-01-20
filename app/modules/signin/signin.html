@@ -1,0 +1,57 @@
+<div class="main-login col-sm-4 col-sm-offset-4">
+    <!--<div class="logo">CLIP<i class="clip-clip"></i>ONE
+    </div>-->
+    <!-- start: LOGIN BOX -->
+    <div class="box-login">
+        <div class="panel panel-default panel-box ">
+    <div class="panel-heading">
+        <i class="fa fa-key"></i>
+        Login
+
+    </div>
+    <div class="panel-body">
+        <form name="signinForm" class="panel-body wrapper-lg" novalidate>
+
+            <div class="form-group">
+                <span class="input-icon">
+                    <input type="email" name="email" ng-model="vm.credential.email" required="required" class="form-control"/>
+                    <i class="fa fa-user"></i>
+                </span>
+            </div>
+            <div class="form-group form-actions">
+                <span class="input-icon">
+                    <input type="password" name="password" class="form-control" ng-model="vm.credential.password" placeholder="password" ng-keyup="$event.which === 13 && vm.login(vm.credential)">
+                    <i class="fa fa-lock"></i>
+                </span>
+            </div>
+            <!--<div class="checkbox">
+                <label>
+                    <input type="checkbox"> Keep me logged in
+                </label>
+            </div>-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block" data-ng-disabled="signinForm.$invalid" data-ng-click="vm.login(vm.credential)" >
+                        Sign in
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+    </div>
+</div>
